@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+</head>
+<body>
+
+<form action="">
+    用户名：<input name="uname" type="text"><span id="uname-msg"></span><br>
+    密码：<input name="upwd" type="password"><span id="upwd-msg"></span><br>
+    <input type="button" value="提交注册信息">
+</form>
+
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+//    选择用户名，绑定失去焦点
+$("form>[name='uname']").blur(function () {
+//     获取当前文本框的内容
+    var $txt = $(this);
+
+//    获得文本框的下一个兄弟保存在 $span中
+    var $span = $txt.next();
+
+//    判断内容长度
+    if($txt.val().length>2 && $txt.val().length<10){
+        //    符合弹出ok
+        $span.html('<img src="image/ok.png">')
+    }
+//    反之err
+    else{
+        $span.html('<img src="image/err.png">用户名长度必须介于3~9位')
+    }
+});
+
+$("form>[name='upwd']").blur(function () {
+        //     获取当前文本框的内容
+        var $txt = $(this);
+
+//    获得文本框的下一个兄弟保存在 $span中
+        var $span = $txt.next();
+
+//    判断内容长度
+        if($txt.val().length>5 && $txt.val().length<9){
+            //    符合弹出ok
+            $span.html('<img src="image/ok.png">')
+        }
+//    反之err
+        else{
+            $span.html('<img src="image/err.png">密码长度必须介于6~8位')
+        }
+    })
+</script>
+
+</body>
+</html>
