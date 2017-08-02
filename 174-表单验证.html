@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<form action="">
+    请选择您最喜欢的板块：<br>
+    Python<input type="checkbox"><br>
+    Web开发<input type="checkbox"><br>
+    吹水阁<input type="checkbox"><br>
+    C／C++<input type="checkbox"><br>
+    <input type="button" value="进入我的账号">
+</form>
+
+<script>
+//   1 选择type为button的元素绑定单击事件
+    $("form>:button").click(function () {
+//    2    选择状态为checked的元素，保存在a中
+//        利用状态伪类
+        var $a = $("form>:checked")
+//            3 如果一个也没选，弹出警告框
+        if ($a.length == 0)
+        {
+            alert("这位可爱的鱼油，请至少选择一项哦～")
+        }
+        else{
+            document.write("谢谢你的投票");
+        }
+    })
+</script>
+</body>
+</html>
