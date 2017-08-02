@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+</head>
+<body>
+<form action="">
+    用户名：<input type="text" disabled><br>
+    密码：<input type="password" disabled><br>
+    角色：<select>
+    <option>鱼油</option>
+    <option>版主</option>
+    <option>管理团队</option>
+</select><br>
+    自我吹水：<textarea cols="30" rows="10"></textarea><br>
+    <input type="checkbox">统一本站使用条款<br>
+    <button>提交注册信息</button>
+    
+
+</form>
+
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+////    元素选择器 查找button按钮
+//    console.dir($("form>button"));
+//
+////    type选择器 查找type属性为password
+//    console.dir($("form>:password"));
+//
+////     状态选择器，查找disabled
+//    console.dir($("form>:disabled"));
+
+
+//    选择type为checkbox的表单元素，为其绑定单击事件
+    $("form>:checkbox").click(function () {
+//        选择所有不是checkbox的表单元素，设置其当前属性和disable属性相反
+        $("form>:input:not(:checkbox)").prop("disabled",!$(this).prop("checked"));
+    })
+</script>
+
+</body>
+</html>

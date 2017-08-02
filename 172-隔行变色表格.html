@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+
+    <style>
+        table{
+            /*相邻边被合并,不会出现双线*/
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th,table td{
+            padding: 6px 11px;
+            text-align: center;
+        }
+        /*<!--傻瓜css-->*/
+        /*!*将表头下的下边框加粗*!*/
+        /*table th{*/
+            /*border-bottom: 2px solid #aaa;*/
+        /*}*/
+        /*!*设置除了"最后一个td的下边线"外的所有td*!*/
+        /*table>tbody>tr:not(:last-child)>td{*/
+            /*border-bottom: 1px solid #aaa;*/
+        /*}*/
+
+        /*!*设置隔行变色，奇数行有背景色*!*/
+        /*table>tbody>tr:nth-child(odd){*/
+            /*background-color: #aff;*/
+        /*}*/
+
+        /*!*设置隔行变色，偶数行有背景色*!*/
+        /*table>tbody>tr:nth-child(even){*/
+            /*background-color: #faf;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<table>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>邮箱</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>小甲鱼</td>
+        <td>男</td>
+        <td>30</td>
+        <td>xiaojiayu@fishc.com</td>
+    </tr>
+    <tr>
+        <td>风介</td>
+        <td>男</td>
+        <td>30</td>
+        <td>fengjie@fishc.com</td>
+    </tr>
+    <tr>
+        <td>康小泡</td>
+        <td>女</td>
+        <td>2？</td>
+        <td>kangxiaopao@fishc.com</td>
+    </tr>
+    <tr>
+        <td>不二如是</td>
+        <td>男</td>
+        <td>3</td>
+        <td>buer@fishc.com</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+//    选择thead中th，设置下边框
+    $("table th").css("borderBottom","2px solid #aaa");
+
+//    选择tbody中的除第一行外的td，设置其borderTop
+    $("table>tbody>tr:gt(0)>td").css("borderTop","1px solid #aaa");
+
+//设置隔行变色，奇数行有背景色
+    $("table>tbody>tr:odd").css("backgroundColor","#aff");
+
+//设置隔行变色，偶数行有背景色
+    $("table>tbody>tr:even").css("backgroundColor","#faf");
+</script>
+
+</body>
+</html>

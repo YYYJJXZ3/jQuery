@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: #faa;
+
+        }
+
+        .dropdown{
+            position:relative ;
+        }
+
+        .dropdown>[data-trigger="dropdown"]{
+            padding: 6px 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu{
+            position: absolute;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #aff;
+            top:37px;
+
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<div class="dropdown">
+    <a data-trigger="dropdown" href="#">Dropdown</a>
+    <ul class="dropdown-menu fade">
+        <li><a>Web开发</a></li>
+        <li><a>Python</a></li>
+        <li><a>Vue.js</a></li>
+        <li><hr></li>
+        <li><a>小天才养殖场</a></li>
+    </ul>
+</div>
+
+<script>
+    //为data-trigger为dropdown的元素绑定单击事件
+    $('[data-trigger="dropdown"]').click(function () {
+//        获得隐藏，还是显示的状态
+        var $menu = $(".dropdown>.dropdown-menu");
+        $menu.css("display",$menu.css("display") == "none"?"block":"none");
+    }
+    );
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        /*去掉列表中的点*/
+        .tabs{
+            list-style: none;
+            padding:0;
+        }
+        /*li左浮动*/
+        .tabs>li{
+            float: left;
+        }
+        /*设置a标签样式*/
+        .tabs>li>a{
+            text-decoration: none;
+            padding: 6px 11px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+
+<ul class="tabs">
+    <li><a data-toggle="tab" href="#">宝贝</a></li>
+    <li><a data-toggle="tab" href="#">天猫</a></li>
+    <li><a data-toggle="tab" href="#">店铺</a></li>
+</ul>
+
+<script>
+//选择class为tabs下的，所有data-toggle属性按钮
+//    使用万能的属性选择器
+    $(".tabs [data-toggle='tab']").css("borderBottom","1px solid #000")
+        .click(function () {
+//            把所有a的边框先去掉，以防出错～
+            $(".tabs [data-toggle='tab']").css({
+                border:"none",
+                //            然后为当前a加完整边框，然后在去掉下边框
+                borderBottom:"1px solid #000"
+            });
+
+//            当前a加边框，去下边框
+            $(this).css({
+                border:"1px solid #000",
+                borderBottom:"none"
+            })
+        });
+
+
+//    默认为第一个元素的设置完整边框，然后去掉下边框
+    $(".tabs [data-toggle='tab']:first").css({
+        border:"1px solid #000",
+        borderBottom:"none"
+    });
+
+
+</script>
+
+</body>
+</html>

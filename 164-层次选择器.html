@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        div,span,p {
+            width:140px;
+            height:140px;
+            margin:5px;
+            background:#aaa;
+            border:#000 1px solid;
+            float:left;
+            font-size:17px;
+            font-family:Verdana;
+        }
+        div.mini {
+            width:55px;
+            height:55px;
+            background-color: #aaa;
+            font-size:12px;
+        }
+        div.hide {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<h3>层次选择器</h3>
+<input type="button" value="选择body内的所有div元素." id="btn1"/>
+<input type="button" value="选择body内直接div子元素." id="btn2"/>
+<input type="button" value="选择class为one的下一个兄弟div元素." id="btn3"/>
+<input type="button" value="选择id为two的元素后面的所有兄弟div元素." id="btn4"/>
+
+<hr>
+
+<!-- 测试的元素 -->
+<div class="one" id="one" >
+    id为one,class为one的div
+    <div class="mini">class为mini</div>
+</div>
+
+<div class="one"  id="two" title="test" >
+    id为two,class为one,title为test的div.
+    <div class="mini"  title="other">class为mini,title为other</div>
+    <div class="mini"  title="test">class为mini,title为test</div>
+</div>
+
+<div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini"></div>
+</div>
+
+
+
+<div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini"  title="tesst">class为mini,title为tesst</div>
+</div>
+
+
+<div style="display:none;"  class="none">style的display为"none"的div</div>
+
+<div class="hide">class为"hide"的div</div>
+
+<div>
+    包含input的type为"hidden"的div<input type="hidden" size="8"/>
+</div>
+
+
+<span id="mover">正在执行动画的span元素.</span>
+
+<script>
+
+    //为btn1的按钮添加单击事件
+    $("#btn1").click(function(){
+//        选择body内的所有div元素
+        $("body div").css("background","#faa");
+    });
+
+    //为btn2的按钮添加单击事件
+    $("#btn2").click(function(){
+//        选择body内直接div子元素
+        $("body>div").css("background","#aff");
+    });
+
+    //为btn3的按钮添加单击事件
+    $("#btn3").click(function(){
+//        选择class为one的下一个兄弟div元素
+        $(".one+div").css("background","#3ff");
+    });
+
+    //为btn4的按钮添加单击事件
+    $("#btn4").click(function(){
+//        选择id为two的元素后面的所有兄弟div元素
+        $("#two~div").css("background","#faf");
+    });
+</script>
+
+</body>
+</html>

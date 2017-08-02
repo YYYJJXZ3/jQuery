@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        /*.fooDom{*/
+            /*!*设置列表标记的 默认会是实心圆点 设成none就是没有标记列表格式*!*/
+            /*list-style: none;*/
+        /*}*/
+        /*.fooDom>li{*/
+            /*padding: 6px 11px;*/
+            /*border: 2px dotted red;*/
+            /*float: left;*/
+        /*}*/
+
+        /*!*删除"除最后一个"元素外的所有元素右边框*!*/
+        /*.fooDom>li:not(:last-child){*/
+            /*border-right: none;*/
+        /*}*/
+
+        /*!*设置第一个元素*!*/
+        /*.fooDom>li:first-child{*/
+            /*border-top-left-radius: 5px;*/
+            /*border-bottom-left-radius: 5px;*/
+        /*}*/
+
+        /*!*设置最后一个元素*!*/
+        /*.fooDom>li:last-child{*/
+            /*border-top-right-radius: 5px;*/
+            /*border-bottom-right-radius: 5px;*/
+        /*}*/
+
+
+
+        .funjQ{
+            /*设置列表标记的 默认会是实心圆点 设成none就是没有标记列表格式*/
+            list-style: none;
+        }
+        .funjQ>li{
+
+            padding: 6px 11px;
+            border: 2px dotted red;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+<!--<ul class="fooDom">-->
+    <!--<li>1</li>-->
+    <!--<li>2</li>-->
+    <!--<li>3</li>-->
+    <!--<li>4</li>-->
+<!--</ul>-->
+
+<ul class="funjQ">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<script>
+//    选择前三个li
+$(".funjQ>li:lt(3)").css("border-right","none");
+
+//修改first边角
+    $(".funjQ>li:first").css({
+        borderTopLeftRadius:5,
+        borderBottomLeftRadius:5
+    });
+
+    //修改最后一个边角
+    $(".funjQ>li:last").css({
+        borderTopRightRadius:5,
+        borderBottomRightRadius:5
+    })
+
+</script>
+
+</body>
+</html>

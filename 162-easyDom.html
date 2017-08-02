@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        /*简单设置下文本样式*/
+        #target{
+            position: absolute;
+            font-size: 33px;
+            top: 111px;
+            left: 333px;
+        }
+    </style>
+
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+
+<!--创建基本按钮-->
+<button id="moveUp">向上飞～</button>
+<button id="changeColre">变色！</button>
+<button id="disappear">消失～</button>
+
+<p id="target">鱼C工作室(www.fishc.com)</p>
+
+<script>
+ $(document).ready(function () {
+
+//     向上
+     $("#moveUp").click(function () {
+         $("#target").animate({top:30},300);
+     });
+
+     //变色
+     $("#changeColre").click(function () {
+         $("#target").css("color","magenta");
+     });
+
+      //消失
+     $("#disappear").click(function () {
+        $("#target").toggle("slow");
+     });
+ })
+
+</script>
+
+
+</body>
+</html>
