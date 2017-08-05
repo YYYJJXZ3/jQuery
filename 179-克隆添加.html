@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        select { width: 120px; height: 160px}
+    </style>
+</head>
+<body>
+<select id="unsel" size="10">
+    <option value="Arg">Argentina</option>
+    <option value="Bra">Brazil</option>
+    <option value="Can">Canada</option>
+    <option value="Chi">China</option>
+    <option value="Cub">Cuba</option>
+    <option value="Den">Denmark</option>
+    <option value="Egy">Egypt</option>
+    <option value="Fra">France</option>
+    <option value="Gre">Greece</option>
+    <option value="Spa">Spain</option>
+</select>
+<select id="sel" size="10">
+</select>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+
+<script>
+//    选择所有option，绑定双击事件
+    $("option").dblclick(function () {
+        var $opt = $(this);
+        //如果当前option的父元素是unsel,找到左边区域
+        if($opt.is("#unsel>option")){
+//           查找id为sel下的option中内容和当前option一样的option
+            var $optR = $("#sel>option:contains("+$opt.html()+")");
+
+//        如果没找到重复的，将新元素插入
+        if($optR.length == 0)
+        {
+//            找到id为sel的select，为其添加子元素（来自当前option的克隆）
+            $("#sel").append($opt.clone(true));
+        }
+        }
+        else{
+//            删除当前option
+            $opt.remove();
+        }
+    })
+</script>
+
+</body>
+</html>

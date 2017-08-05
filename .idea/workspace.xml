@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d29757-44c3-4f36-98ac-a87a2e775403" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/177-修改表单.html" afterPath="$PROJECT_DIR$/177-修改表单.html" />
-    </list>
+    <list default="true" id="a9d29757-44c3-4f36-98ac-a87a2e775403" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -33,17 +31,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="178-模拟历史框-添加删除.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="178-模拟历史框-添加删除.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/178-模拟历史框-添加删除.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="333">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="e#661#669#0" expanded="true" />
                 <element signature="e#760#767#0" expanded="true" />
                 <marker date="1501860746000" expanded="true" signature="1087:1141" ph="..." />
                 <marker date="1501860746000" expanded="true" signature="1117:1124" ph="×" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="179-克隆添加.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/179-克隆添加.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +101,7 @@
         <option value="$PROJECT_DIR$/176-优化版封装函数.html" />
         <option value="$PROJECT_DIR$/177-修改表单.html" />
         <option value="$PROJECT_DIR$/178-模拟历史框-添加删除.html" />
+        <option value="$PROJECT_DIR$/179-克隆添加.html" />
       </list>
     </option>
   </component>
@@ -103,10 +112,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="68" />
+    <option name="x" value="152" />
     <option name="y" value="23" />
     <option name="width" value="1384" />
-    <option name="height" value="606" />
+    <option name="height" value="594" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -232,15 +241,15 @@
       <updated>1501387229372</updated>
       <workItem from="1501387230571" duration="41826000" />
       <workItem from="1501681603794" duration="8176000" />
-      <workItem from="1501742901170" duration="7824000" />
+      <workItem from="1501742901170" duration="11878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57826000" />
+    <option name="totallyTimeSpent" value="61880000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="23" width="1384" height="606" extended-state="0" />
+    <frame x="152" y="23" width="1384" height="594" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19295672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -411,14 +420,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/178-模拟历史框-添加删除.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        <state relative-caret-position="333">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="e#661#669#0" expanded="true" />
             <element signature="e#760#767#0" expanded="true" />
             <marker date="1501860746000" expanded="true" signature="1087:1141" ph="..." />
             <marker date="1501860746000" expanded="true" signature="1117:1124" ph="×" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/179-克隆添加.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
