@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+</head>
+<body>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+
+<button id="btn1">bind</button>
+<button id="btn2">unbind</button>
+
+<script>
+    function sayHello(){alert("Halo World")}
+    function fishcFun(){alert("Welcome tom fishc")}
+
+//    为按钮bind绑定两个事件（利用链式操作）
+    $("#btn1").bind("click",sayHello).bind("click",fishcFun);
+
+//    通过btn2对btn1的事件进行解绑，多种方式
+    $("#btn2").bind("click",function () {
+
+//        解除指定事件上绑定的指定处理函数
+//        $("#btn1").unbind("click",sayHello);
+
+//        解除指定事件上绑定的所有处理函数
+//        $("#btn1").unbind("click");
+
+//        解除当前元素上所有事件处理函数绑定
+        $("#btn1").unbind();
+    })
+
+</script>
+
+</body>
+</html>
