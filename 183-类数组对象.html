@@ -17,8 +17,14 @@
     $("img").click(function () {
 //        添加动画部分不是重点，看一下知道是干什么的即可
 //       实现放大，并逐渐消失
+
+//        图片下沉，别挡住其他的
+        $(this).css("zIndex",-1);
+//        抵消左移量，变成居中执行动画
+        var left = parseFloat($(this).css("left"))-100;
         $(this).animate({
-            width:400,height:250,opacity:0
+//            别忘了调用偏移量
+            left:left,width:400,height:250,opacity:0
         },999,function () {
             $(this).remove();
 //           *** 找到类数组中的每一个元素,删除完位置重新计算
