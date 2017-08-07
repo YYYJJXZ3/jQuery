@@ -88,15 +88,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="182-hover.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="182-hover.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/182-hover.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            <state relative-caret-position="168">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#547#555#0" expanded="true" />
                 <element signature="e#582#590#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="183-类数组对象.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/183-类数组对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,6 +162,7 @@
         <option value="$PROJECT_DIR$/181-网页加载顺序.html" />
         <option value="$PROJECT_DIR$/image/182-hover.html" />
         <option value="$PROJECT_DIR$/182-hover.html" />
+        <option value="$PROJECT_DIR$/183-类数组对象.html" />
       </list>
     </option>
   </component>
@@ -162,7 +173,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="188" />
+    <option name="x" value="6" />
     <option name="y" value="23" />
     <option name="width" value="1384" />
     <option name="height" value="442" />
@@ -196,20 +207,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jQuery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jQuery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jQuery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,15 +305,15 @@
       <updated>1501387229372</updated>
       <workItem from="1501387230571" duration="41826000" />
       <workItem from="1501681603794" duration="8176000" />
-      <workItem from="1501742901170" duration="18495000" />
+      <workItem from="1501742901170" duration="21310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68497000" />
+    <option name="totallyTimeSpent" value="71312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="188" y="23" width="1384" height="442" extended-state="0" />
+    <frame x="6" y="23" width="1384" height="442" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19295672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -534,12 +531,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/182-hover.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="168">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#547#555#0" expanded="true" />
             <element signature="e#582#590#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/183-类数组对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

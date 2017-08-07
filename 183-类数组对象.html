@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+</head>
+<body>
+<h1>类数组对象</h1>
+<img src="image/1.jpg" alt="">
+<img src="image/2.jpg" alt="">
+<img src="image/3.jpg" alt="">
+<img src="image/4.jpg" alt="">
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+
+<script>
+    $("img").click(function () {
+//        添加动画部分不是重点，看一下知道是干什么的即可
+//       实现放大，并逐渐消失
+        $(this).animate({
+            width:400,height:250,opacity:0
+        },999,function () {
+            $(this).remove();
+//           *** 找到类数组中的每一个元素,删除完位置重新计算
+            $("img").each(function (i) {
+//                执行动画同时，产生移动个效果
+                $(this).css("left",i*200);
+            });
+        });
+    });
+</script>
+</body>
+</html>
