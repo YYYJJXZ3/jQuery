@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+    <style>
+        #target {
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all .5s linear;
+        }
+        #target.over {
+            border: 2px solid #faf;
+            box-shadow: 0 0 6px #aaa;
+        }
+    </style>
+</head>
+<body>
+<h1>补充：使用hover(fn,fn)函数监听mouseover和mouseout两个事件</h1>
+
+<h3>鼠标悬停在div上方，则突出显示；移出则取消突出显示</h3>
+<div id="target">
+    <p>欢迎来到鱼C工作室：www.fishc.com<br><br>&hearts;Change the World By Program&hearts;</p>
+</div>
+<!--引入jQuery框架-->
+<script src="js/jquery-3.2.1.js"></script>
+
+<script>
+    //    $("#target").mouseover(function () {
+    //        $(this).addClass("hover")
+    //    }).mouseout(function () {
+    //        $(this).removeClass("hover")
+    //    })
+
+    $("#target").hover(
+        function(){$(this).toggleClass("over");}
+    );
+
+
+
+</script>
+
+
+</body>
+</html>
